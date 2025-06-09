@@ -12,9 +12,9 @@ print(data)
 answer = int(data[0])
 
 for i in range(1,len(data)):
-    if data[i-1] == "0":
+    if data[i-1] == "0" or data[i-1] == 1:
         answer += int(data[i])
     else:
         answer *= int(data[i])
-        
+
 print(answer)
